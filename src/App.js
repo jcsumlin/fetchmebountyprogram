@@ -2,6 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import GoTrue from 'gotrue-js';
+
+
+let auth = new GoTrue({
+  APIUrl: 'https://vibrant-benz-b0c3a2.netlify.app/.netlify/identity',
+  audience: '',
+  setCookie: false,
+});
 function App() {
   return (
     <div className="App">
